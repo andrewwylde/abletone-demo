@@ -1,0 +1,17 @@
+{
+  "name": "ableton_learn_music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "start": "./node_modules/.bin/docker -i src -o dist -c atom-one-dark",
+      "watch": "./node_modules/.bin/docker -i src -o temp/docs -c atom-one-dark --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "docker": "^1.0.0",
+    "http-server": "^0.10.0"
+  }
+}
