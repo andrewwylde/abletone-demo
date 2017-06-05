@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "start": "./node_modules/.bin/docker -i src -o dist -c atom-one-dark",
-      "watch": "./node_modules/.bin/docker -i src -o temp/docs -c atom-one-dark --watch"
+      "start": "./node_modules/.bin/docker -i src -o dist -I -x node_modules, dist, temp -c atom-one-dark --watch",
+      "serve": "./node_modules/.bin/hs -p 9002 dist"
   },
   "keywords": [],
   "author": "",
